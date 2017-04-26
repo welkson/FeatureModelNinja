@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="Module ">
+				<description>
+					Teste
+				</description>
+				<description>
+					Teste
+				</description>
+				<and abstract="true" name="AbastractModule  ">
+					<feature name="FrameworkModule "/>
+					<and name="NinjaBaseModule  ">
+						<feature name="LifeCycle "/>
+						<feature name="Schedule. "/>
+						<feature name="Router "/>
+						<feature name="Logger "/>
+					</and>
+					<alt name="NinjaClassicModule. ">
+						<feature mandatory="true" name="XML "/>
+						<feature mandatory="true" name="FreeMarker"/>
+						<feature mandatory="true" name="JSON"/>
+						<feature mandatory="true" name="PostOffice "/>
+						<feature mandatory="true" name="Cache "/>
+						<feature mandatory="true" name="Migrations "/>
+						<feature mandatory="true" name="JPA "/>
+					</alt>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
